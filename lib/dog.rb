@@ -1,3 +1,4 @@
+require "pry"
 class Dog
   attr_reader :name
 
@@ -13,6 +14,8 @@ class Dog
   end
 
   def self.all
-    @@all.each {|ID, name| puts name}
+    @@all.each do |ID, name| 
+      puts name
+    end
   end
 end
