@@ -15,6 +15,7 @@ class Dog
 
   def self.all
     @@all.each do |ID, name|
+      binding.pry
       puts name
     end
   end
